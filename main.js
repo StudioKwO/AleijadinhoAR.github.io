@@ -13,29 +13,11 @@ let font;
 let materials;
 let textMesh1;
 const models = [
-    ["./static/models/ExpoAR_Scenes/Guerra/Guerra.gltf", "Guerra"],
-    ["./static/models/ExpoAR_Scenes/Adoracao/Adoracao.gltf", "Adoracao"],
-    ["./static/models/ExpoAR_Scenes/Boqueirao/Boqueirao.gltf", "Boqueirao"],
-    ["./static/models/ExpoAR_Scenes/Veado/Veado.gltf", "Veado"],
-    ["./static/models/ExpoAR_Scenes/Beijo/Beijo.gltf", "Beijo"],
-    ["./static/models/ExpoAR_Scenes/Acrobatas/Acrobatas.gltf", "Acrobatas"],
-    ["./static/models/ExpoAR_Scenes/CacadaOnca/CacadaOnca.gltf", "CacadaOnca"],
-    ["./static/models/ExpoAR_Scenes/CavernaCacador/CavernaCacador.gltf", "CavernaCacador"],
-    ["./static/models/ExpoAR_Scenes/Desfiladeiro/Desfiladeiro.gltf", "Desfiladeiro"],
-    ["./static/models/ExpoAR_Scenes/PedraFurada/PedraFurada.gltf", "PedraFurada"]
+    ["./static/models/Profetas/Isaias/Profeta 1 - Isaias.gltf", "Isaias"]
 ]; 
 const transforms = [
     // scale, rotation, position
-    [new Vector3(1.25,1.25,1.25),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(0,0,0),new Vector3(0,0,0)],
-    [new Vector3(1.75,1.75,1.75),new THREE.Euler(Math.PI/2,0,0),new Vector3(0,0.2,0)],
-    [new Vector3(2,2,2),new THREE.Euler(Math.PI/2,Math.PI/2,0),new Vector3(0,0.2,0)],
-    [new Vector3(1.5,1.5,1.5),new THREE.Euler(Math.PI/2,0,0),new Vector3(0,0.2,0)]
+    [new Vector3(1.25,1.25,1.25),new THREE.Euler(0,0,0),new Vector3(0,0,0)]
 ]
 
 async function LoadModelAttachToAnchorIndex(mindarThree, transform, model, index){
@@ -101,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
             renderer.render(scene, camera);
         }
         await new Promise(resolve => setTimeout(resolve, 500));
-        text.textContent = "Tinta & Fogo AR";
+        text.textContent = "Aleijadinho AR";
         await new Promise(resolve => setTimeout(resolve, 2500));
         text.textContent = "Iniciando Realidade Aumentada";
         await new Promise(resolve => setTimeout(resolve, 1000));
